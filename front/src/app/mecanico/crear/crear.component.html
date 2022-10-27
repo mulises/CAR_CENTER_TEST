@@ -1,0 +1,50 @@
+<div>
+    <h1>Formulario creacioón Mecanico</h1>
+    <form [formGroup]="mecanico" class="formulario">
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="email"   >
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Tipo Documento</mat-label>
+            <input matInput placeholder="C.C T.I" formControlName="tipoDocumento">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Documento</mat-label>
+            <input matInput placeholder="documento" formControlName="documento">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Primer Nombre</mat-label>
+            <input matInput placeholder="primer Nombre" formControlName="primerNombre">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Segundo Nombre</mat-label>
+            <input matInput placeholder="segundo nombre" formControlName="segundoNombre">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Primer Apellido</mat-label>
+            <input matInput placeholder="Primer Apellido" formControlName="primerApellido">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Segundo Apellido</mat-label>
+            <input matInput placeholder="Aegundo Apellido" formControlName="segundoApellido">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Celular</mat-label>
+            <input matInput placeholder="333263541" formControlName="celular">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Direción</mat-label>
+            <input matInput placeholder="Calle 56 # 40 - 18 apto" formControlName="direccion">
+        </mat-form-field>
+    </form>
+</div>
+<button mat-raised-button [disabled]="mecanico.invalid" (click)="crearMecanico()" color="primary">Crear</button>

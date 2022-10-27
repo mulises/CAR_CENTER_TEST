@@ -1,0 +1,14 @@
+<div class="header">
+  <button mat-button [matMenuTriggerFor]="primerMenu">Mecanico</button>
+  <mat-menu #primerMenu="matMenu" yPosition="above">
+    <button mat-menu-item [routerLink]="['/mecanico']">Crear</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="segundoMenu">Asignaciones</button>
+  <mat-menu #segundoMenu="matMenu" yPosition="above">
+    <button mat-menu-item [routerLink]="['/asignar']">Asignar</button>
+  </mat-menu>
+</div>
+<div class="body__content">
+  <router-outlet></router-outlet>
+</div>
